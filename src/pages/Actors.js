@@ -14,19 +14,17 @@ function Actors() {
 
   const actorList = actors.map(actor => <Card key={actor.id} name={actor.name} movies={actor.movies} />)
 
-
-
   return (
     <>
       <header>
-      <NavBar />
+        <NavBar />
       </header>
       <main>
-      <h1>Actors Page</h1>
+        <h1>Actors Page</h1>
         {actorList}
       </main>
     </>
   );
-};
+}
 
 export default Actors;
